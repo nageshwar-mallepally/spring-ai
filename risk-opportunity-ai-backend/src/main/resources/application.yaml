@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: risk-opportunity-ai
+  datasource:
+    url: jdbc:h2:mem:risk_ai_db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  ai:
+    model:
+      chat: google-genai
+    google:
+      genai:
+        api-key: <GEMINI_API_KEY>
+        chat:
+          options:
+            model: gemini-pro
+            temperature: 0.7
+    # model:
+    #   chat: google-genai
+    # google:
+    #   genai:
+    #     api-key: <GEMINI_API_KEY>
+    #     chat:
+    #       options:
+    #         model: gemini-pro
+    #         temperature: 0.7
+
+server:
+  port: 8090
+  cors:
+    allowed-origins: "http://localhost:3000"
+    allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+    allowed-headers: "*"
+    allow-credentials: true
+
+app:
+  rag:
+    chunk-size: 1000
+    chunk-overlap: 200
+  ai:
+    use-mock: false
