@@ -1,11 +1,11 @@
 markdown
 # Risk & Opportunity AI RAG Analyst
 
-A full-stack application for AI-powered risk assessment and opportunity analysis using RAG technology.
+A full-stack application for AI-powered risk assessment/analysis and opportunity assessment/analysis using RAG technology.
 
 ## 🚀 Overview
 
-This project provides intelligent risk and opportunity analysis through a modern web interface. It combines traditional risk assessment with AI-powered insights using Retrieval-Augmented Generation (RAG) technology.
+This project provides intelligent risk and opportunity analysis through a modern web interface. It combines traditional risk assessment/analysis with AI-powered insights using Retrieval-Augmented Generation (RAG) technology.
 
 ## 📋 Features
 
@@ -25,7 +25,6 @@ This project provides intelligent risk and opportunity analysis through a modern
 - Responsive Material-UI design
 - Interactive analysis history
 - Side-by-side comparison view
-- Mobile-friendly interface
 
 ## 🛠️ Tech Stack
 
@@ -77,7 +76,7 @@ H2 Database Console: http://localhost:8090/h2-console
 
 JDBC URL: jdbc:h2:mem:testdb
 
-Username: sa
+Username: username
 
 Password: password
 
@@ -97,7 +96,7 @@ Receive structured recommendations
 Monitor RAG system status and document count
 
 Analysis History
-Track all previous analyses
+Track all previous analysis
 
 Filter by type, category, and priority
 
@@ -130,9 +129,6 @@ History Review: Track and compare previous analyses
 
 Export Insights: Use recommendations for decision making
 
-🤝 Contributing
-Fork the repository
-
 Create feature branch (git checkout -b feature/improvement)
 
 Commit changes (git commit -m 'Add feature')
@@ -140,6 +136,3 @@ Commit changes (git commit -m 'Add feature')
 Push to branch (git push origin feature/improvement)
 
 Open Pull Request
-
-📄 License
-MIT License - see LICENSE file for details.
